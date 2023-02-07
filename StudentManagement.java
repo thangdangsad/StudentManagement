@@ -1,7 +1,3 @@
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-
 public class StudentManagement {
     public static void main(String[] args) {
         Student s1 = new Student("Nguyen Van An", "17020001", "K62CC", "17020001@vnu.edu.vn");
