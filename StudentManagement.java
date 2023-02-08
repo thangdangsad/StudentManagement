@@ -54,13 +54,15 @@ public class StudentManagement {
                 groups[count] = students[i].getGroup();
                 System.out.println("Group " + groups[count] + ":");
                 count++;
+                for (int j = 0; j< students.length; j++){
+                    if(students[i].getGroup().equals(students[j].getGroup())){
+                        System.out.println(
+                                students[j].getName() + "  -  " +
+                                        students[j].getId() + "  -  " +
+                                        students[j].getGroup() + "  -  " +
+                                        students[j].getEmail());
             }
-            System.out.println(
-                    students[i].getName() + "-" +
-                            students[i].getId() + "-" +
-                            students[i].getGroup() + "-" +
-                            students[i].getEmail());
-
+           
         }
         return result;
     }
